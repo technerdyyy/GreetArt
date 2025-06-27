@@ -1,6 +1,7 @@
 // src/pages/Explore.jsx
 import React, { useState } from "react";
 import { allCategories } from "../data/data";
+import { useNavigate } from "react-router-dom";
 
 const Categories = () => {
   const [selectedLetter, setSelectedLetter] = useState("All");
@@ -20,10 +21,13 @@ const Categories = () => {
     return matchesLetter && matchesSearch;
   });
 
+  const navigate = useNavigate();
+
   const handleClick = (categoryName) => {
-    // ✨ Replace with actual routing logic
-    console.log(`Navigate to: ${categoryName}`);
-    // e.g. navigate(`/templates/${categoryName.toLowerCase()}`);
+    // Convert category name to lowercase & slug format
+    const path =
+      "/categories/" + categoryName.toLowerCase().replace(/\s+/g, "");
+    navigate(path);
   };
 
   return (

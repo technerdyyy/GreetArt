@@ -2,7 +2,7 @@
 import { Heart, Calendar, Quote, Gift, Edit3, Download, Palette, Zap } from "lucide-react";
 import birthday from "../assets/birthday.png";
 import anniversary from "../assets/anniversary.png";
-import rakshabandhan from "../assets/rakshabandhan.png";
+import quotes from "../assets/quotes.png";
 import thanks from "../assets/thankyou.png";
 // import congratulation from "../assets/congratulations.png";
 const categories = [
@@ -139,7 +139,7 @@ const features = [
 const allCategories = [
   { name: "Anniversary", image: anniversary },
   { name: "Birthday", image: birthday },
-  { name: "Rakshabandhan", image: rakshabandhan },
+  { name: "Quotes", image: quotes },
   { name: "Thank You", image: thanks },
 //   { name: "Congratulations", image: congratulation },
 ];

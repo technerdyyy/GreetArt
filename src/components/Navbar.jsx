@@ -17,12 +17,12 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a
-                href="#home"
+              <Link
+                to="/"
                 className="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Home
-              </a>
+              </Link>
               <div className="relative group">
                 <Link to="/categories">
                   <button className="text-gray-900 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
