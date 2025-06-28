@@ -1,10 +1,8 @@
-// Categories used in Navbar, Footer And LandingPage
+
 import { Heart, Calendar, Quote, Gift, Edit3, Download, Palette, Zap } from "lucide-react";
-import birthday from "../assets/birthday.png";
-import anniversary from "../assets/anniversary.png";
-import quotes from "../assets/quotes.png";
-import thanks from "../assets/thankyou.png";
 // import congratulation from "../assets/congratulations.png";
+
+// Categories used in Navbar, Footer And LandingPage
 const categories = [
     {
       name: "Birthday Cards",
@@ -35,7 +33,6 @@ const categories = [
 ];
 
 // used in LandingPage
-
 const features = [
     {
       icon: Edit3,
@@ -135,12 +132,11 @@ const features = [
 ];
 
 // used in CategoriesPage
-  
 const allCategories = [
-  { name: "Anniversary", image: anniversary },
-  { name: "Birthday", image: birthday },
-  { name: "Quotes", image: quotes },
-  { name: "Thank You", image: thanks },
+  { name: "Anniversary", image: "/assets/birthday.png" },
+  { name: "Birthday", image: "/assets/birthday.png" },
+  { name: "Quotes", image: "/assets/quotes.png" },
+  { name: "Thank You", image: "/assets/thankyou.png" },
 //   { name: "Congratulations", image: congratulation },
 ];
   
